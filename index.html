@@ -29,8 +29,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
   <div id="logo" class="section"><img src="images/logo-555768181-1662639854-e083b87e03d0d590a96bea6df26162541662639855.png" width="215" sizes="215px" srcset="images/logo-555768181-1662639854-e083b87e03d0d590a96bea6df26162541662639855-p-500.png 500w, images/logo-555768181-1662639854-e083b87e03d0d590a96bea6df26162541662639855-p-800.png 800w, images/logo-555768181-1662639854-e083b87e03d0d590a96bea6df26162541662639855.png 1080w" alt=""></div>
   <section>
-    <div class="w-row">
-      <div class="column-21 w-col w-col-8">
+
+
+    <div class="container__contact div__offset" id="contacto">
+      <div class="column-22 w-col w-col-50">
         <div data-delay="4000" data-animation="slide" class="slider-4 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="w-slider-mask">
             <div class="slide-7 w-slide"></div>
@@ -42,30 +44,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="w-slider-nav w-round"></div>
         </div>
       </div>
-      <div class="column-19 w-col w-col-4">
-        <div class="text-block-6">Dejanos tu <strong>consulta</strong> o<br>pedí tu <strong>catálogo</strong></div>
-        <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="64ddfc8830013e021d7c3939" data-wf-element-id="fc22c216-3ac1-56da-d8e2-f08ca1f8a703"><input type="text" class="text-field w-input" maxlength="256" name="Nombre" data-name="Nombre" placeholder="Nombre" id="Nombre" required=""><input type="email" class="text-field-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="Email-3" required="">
-            <div class="div-block-4"><select id="Prefijo" name="Prefijo" data-name="Prefijo" required="" class="select-field w-select">
-                <option value="">Prefijo</option>
-                <option value="First">+54</option>
-              </select><input type="text" class="text-field-3 w-input" maxlength="256" name="Telefono" data-name="Telefono" placeholder="Teléfono" id="Telefono" required=""></div><select id="Negocio" name="Negocio" data-name="Negocio" required="" class="text-field-3 w-select">
-              <option value="">¿Cuál es tu negocio?</option>
-              <option value="Tengo un local">Tengo un local</option>
-              <option value="Soy revendedor">Soy revendedor</option>
-              <option value="Quiero iniciarme como revendedor">Quiero iniciarme como revendedor</option>
-              <option value="Quiero comprar para mi ">Quiero comprar para mi </option>
-            </select><textarea id="Consulta" name="Consulta" placeholder="¡Contanos más para que podamos asesorarte!" maxlength="5000" data-name="Consulta" class="textarea consulta w-input"></textarea><input type="submit" value="ENVIAR CONSULTA" data-wait="Enviando..." class="submit-button w-button">
+      <div class="form__contact">
+          <p>Dejanos tu consulta</p>
+          <form action="https://formsubmit.co/Suliving2006@yahoo.com.ar" method="POST" name="formulario_contacto" netlify>
+              <div class="name__email">
+                  <input type="text" placeholder="Nombre" name="Nombre del Cliente">
+                  <input type="email" placeholder="Correo electrónico" name="Correo Electrónico">
+              </div>
+              <div class="subject__telephone">
+                  <select id="inputState" class="form-select">
+                    <option>¿Cuál es tu negocio?</option>
+                    <option>Tengo un local</option>
+                    <option>Soy un revendedor</option>
+                    <option>Quiero iniciarme como revendedor</option>
+                    <option>Quiero comprar para mi</option>
+                  </select>
+                  <input type="text" placeholder="Teléfono" name="Teléfono">
+              </div>
+
+              <textarea name="mensaje" placeholder="Mensaje" name="Mensaje"></textarea>
+              <div class="container_btn__text">
+              <input type="submit" class="btn__text" value="Enviar Mensaje">
+              </div>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+              <input type="hidden" name="_captcha" value="false">
+
           </form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="error-message w-form-fail">
-            <div class="text-block-2">¡Muchas gracias!<br>A la brevedad nos pondremos en contacto.</div>
-            <a href="https://drive.google.com/file/d/126AFTKshs6v9PX-dh0TFmHJJZsyUU9Jy/view" target="_blank" class="button-4 w-button">DESCARGÁ EL CATÁLOGO</a>
-          </div>
-        </div>
       </div>
+
+      <div class="modal__message-send" id="mensaje">
+          <div class="message">
+              <h1>Su mensaje ha sido enviado correctamente</h1>
+              <p>Nos estaremos poniendo en contacto con usted lo antes posible. Muchas gracias por su solicitud.</p>
+              <a href="index.html">Aceptar</a>
+          </div>
+      </div>
+  </div>
+      
     </div>
   </section>
   <div class="section-3 diferenciales">
@@ -262,3 +277,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!--  End Google Tag Manager (noscript)  -->
 </body>
 </html>
+
+
+<!--     <div class="w-row">
+      <div class="column-21 w-col w-col-8">
+        <div data-delay="4000" data-animation="slide" class="slider-4 w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+          <div class="w-slider-mask">
+            <div class="slide-7 w-slide"></div>
+            <div class="slide-8 w-slide"></div>
+            <div class="slide-9 w-slide"></div>
+          </div>
+          <div class="w-slider-arrow-left"></div>
+          <div class="w-slider-arrow-right"></div>
+          <div class="w-slider-nav w-round"></div>
+        </div>
+      </div>
+  
+  <div class="column-19 w-col w-col-4">
+        <div class="text-block-6">Dejanos tu <strong>consulta</strong> o<br>pedí tu <strong>catálogo</strong></div>
+        <div class="w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="64ddfc8830013e021d7c3939" data-wf-element-id="fc22c216-3ac1-56da-d8e2-f08ca1f8a703"><input type="text" class="text-field w-input" maxlength="256" name="Nombre" data-name="Nombre" placeholder="Nombre" id="Nombre" required=""><input type="email" class="text-field-2 w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="Email-3" required="">
+            <div class="div-block-4"><select id="Prefijo" name="Prefijo" data-name="Prefijo" required="" class="select-field w-select">
+                <option value="">Prefijo</option>
+                <option value="First">+54</option>
+              </select><input type="text" class="text-field-3 w-input" maxlength="256" name="Telefono" data-name="Telefono" placeholder="Teléfono" id="Telefono" required=""></div><select id="Negocio" name="Negocio" data-name="Negocio" required="" class="text-field-3 w-select">
+              <option value="">¿Cuál es tu negocio?</option>
+              <option value="Tengo un local">Tengo un local</option>
+              <option value="Soy revendedor">Soy revendedor</option>
+              <option value="Quiero iniciarme como revendedor">Quiero iniciarme como revendedor</option>
+              <option value="Quiero comprar para mi ">Quiero comprar para mi </option>
+            </select><textarea id="Consulta" name="Consulta" placeholder="¡Contanos más para que podamos asesorarte!" maxlength="5000" data-name="Consulta" class="textarea consulta w-input"></textarea><input type="submit" value="ENVIAR CONSULTA" data-wait="Enviando..." class="submit-button w-button">
+          </form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="error-message w-form-fail">
+            <div class="text-block-2">¡Muchas gracias!<br>A la brevedad nos pondremos en contacto.</div>
+            <a href="https://drive.google.com/file/d/126AFTKshs6v9PX-dh0TFmHJJZsyUU9Jy/view" target="_blank" class="button-4 w-button">DESCARGÁ EL CATÁLOGO</a>
+          </div>
+        </div>
+      </div> -->
