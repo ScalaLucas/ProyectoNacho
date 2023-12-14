@@ -91,7 +91,9 @@
     border-bottom: 2px solid var(--black);
 }
 
+
 .form-select{
+    width: 60%;
     outline: none;
     background: none;
     margin-top: 40px;
@@ -184,6 +186,11 @@
     background: transparent;
     border: 2px solid var(--black);
     color: var(--black);
+}
+
+
+.subject__telephone{
+  gap: 20px;
 }
 
 .btn__text {
@@ -808,7 +815,7 @@
   
   .column-22 {
     padding-right: 0;
-    width: 500%;
+    width: 300%;
   }
   
   .slide-8 {
@@ -1083,14 +1090,6 @@
       background: var(--background-color);
   }
 
-  input .btn__text{
-    margin: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
   .container_btn__text{
     display: flex;
     justify-content: center;
@@ -1106,6 +1105,16 @@
       justify-content: center;
       align-items: center;
     }
+
+
+    .subject__telephone{
+      gap: 20px;
+    }
+
+    .name__email{
+      gap: 20px;
+    }
+
 
     .form__contact input[type="text"],
     .form__contact input[type="email"] {

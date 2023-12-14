@@ -45,6 +45,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
       <div class="form__contact">
+        <h2>Dejanos tu consulta</h2>
+        <form action="https://formsubmit.co/scalalucasmartin@gmail.com" method="POST" name="formulario_contacto" netlify>
+            <div class="name__email">
+                <input type="text" placeholder="Nombre" name="nombre">
+                <input type="email" placeholder="Correo electrónico" name="correo">
+            </div>
+            <div class="subject__telephone">
+                <select name="select" class="form-select">
+                  <option value="¿Cuál es tu negocio?">¿Cuál es tu negocio?</option>
+                  <option value="Tengo un local">Tengo un local</option>
+                  <option value="Soy revendedor">Soy un revendedor</option>
+                  <option value="Quiero iniciarme como revendedor">Quiero iniciarme como revendedor</option>
+                  <option value="Quiero comprar para mi">Quiero comprar para mi</option>
+                </select>
+                <input type="text" placeholder="Teléfono" name="telefono">
+            </div>
+
+            <textarea name="mensaje" placeholder="Mensaje" name="mensaje"></textarea>
+
+            <input type="submit" class="btn__text" value="Enviar Mensaje">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+    </div>
+      <!--<div class="form__contact">
           <h2>Dejanos tu consulta</h2>
           <form action="https://formsubmit.co/ignaciovrech@gmail.com" method="POST">
               <div class="name__email">
@@ -79,7 +106,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a href="index.html">Aceptar</a>
           </div>
       </div>
-  </div>
+  </div>-->
       
     </div>
   </section>
