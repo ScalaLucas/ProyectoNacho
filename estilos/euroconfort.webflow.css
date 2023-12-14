@@ -1107,9 +1107,9 @@
       align-items: center;
     }
 
-
-    .form__contact > p{
-      margin-top: 5%;
+    .form__contact input[type="text"],
+    .form__contact input[type="email"] {
+        width: 50%;
     }
 
     .section-3.diferenciales {
