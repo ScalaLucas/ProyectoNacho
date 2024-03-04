@@ -735,7 +735,7 @@
   }
   
   .slide-6._12 {
-    background-image: url('../images/accesorios--1.jpg');
+    background-image: url('../images/male_NEGROYBLANCO.jpeg');
   }
   
   .slide-6._15 {
@@ -1154,10 +1154,12 @@
     }
   
     .slide-7 {
-      background-image: url('../images/BANNER_MARCALOGO.jpg');
+      background-image: url('../images/BANNER_VENTAJAS.jpg');
       background-position: 50%;
       background-size: cover;
     }
+
+    
   
     .slider-4 {
       height: 210px;
@@ -1183,13 +1185,13 @@
     }
   
     .slide-8 {
-      background-image: url('../images/BANNER_VENTAJAS.jpg');
+      background-image: url('../images/BANNER_EMPRENDE.jpg');
       background-position: 50%;
       background-size: cover;
     }
   
     .slide-9 {
-      background-image: url('../images/BANNER_EMPRENDE.jpg');
+      background-image: url('../images/BANNER_MARCALOGO.jpg');
       background-position: 50%;
       background-size: cover;
     }
