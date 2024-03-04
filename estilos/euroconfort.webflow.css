@@ -667,17 +667,17 @@
   }
   
   .slide-4 {
-    background-image: url('../images/zapatillas.jpg');
+    background-image: url('../images/Samba_blanco.jpg');
     background-position: 50%;
     background-size: cover;
   }
   
   .slide-4._1 {
-    background-image: url('../images/IMG_0391.jpg');
+    background-image: url('../images/BLUMA_NEGRO.jpg');
   }
   
   .slide-4._4 {
-    background-image: url('../images/HERMES-5.jpeg');
+    background-image: url('../images/BONE.jpg');
     background-position: 50% 0;
   }
   
@@ -686,25 +686,25 @@
   }
   
   .slide-4._13 {
-    background-image: url('../images/texana.jpeg');
+    background-image: url('../images/Aria_negro.jpg');
   }
   
   .slide-4._16 {
-    background-image: url('../images/san-2-5.jpeg');
+    background-image: url('../images/933_NEGRO_GZ.jpg');
   }
   
   .slide-5 {
-    background-image: url('../images/TIMBER-SUELA-ST-1.jpeg');
+    background-image: url('../images/TIMBER_SUELA.jpeg');
     background-position: 50%;
     background-size: cover;
   }
   
   .slide-5._2 {
-    background-image: url('../images/Sandalias--1.jpg');
+    background-image: url('../images/BROOKS_GAST_CHOCO.jpg');
   }
   
   .slide-5._5 {
-    background-image: url('../images/Sandalias--2.jpeg');
+    background-image: url('../images/NILA.jpg');
   }
   
   .slide-5._11 {
@@ -712,38 +712,38 @@
   }
   
   .slide-5._14 {
-    background-image: url('../images/texana.jpg');
+    background-image: url('../images/Rene_gz_vison.jpg');
   }
   
   .slide-5._17 {
-    background-image: url('../images/zuecos.jpg');
+    background-image: url('../images/Bumper_negro.jpg');
   }
   
   .slide-6 {
-    background-image: url('../images/zapatillas-1.jpeg');
+    background-image: url('../images/Trinity_negro.jpg');
     background-position: 50%;
     background-size: cover;
   }
   
   .slide-6._3 {
-    background-image: url('../images/IMG_7764.jpeg');
+    background-image: url('../images/Catalina_negro.jpg');
   }
   
   .slide-6._7 {
-    background-image: url('../images/san-2-4.jpeg');
-    background-position: 50%;
+    background-image: url('../images/OLIVER.jpg');
+    background-position: 50%; 
   }
   
   .slide-6._12 {
-    background-image: url('../images/accesorios--1.jpeg');
+    background-image: url('../images/accesorios--1.jpg');
   }
   
   .slide-6._15 {
-    background-image: url('../images/texana-1.jpeg');
+    background-image: url('../images/Dugan4.jpg');
   }
   
   .slide-6._18 {
-    background-image: url('../images/zueco1.jpg');
+    background-image: url('../images/CARGO_JEAN.jpg');
   }
   
   .slide-nav {
@@ -777,10 +777,11 @@
   }
   
   .slide-7 {
-    background-image: url('../images/BANNER_MARCALOGO.jpg');
+    background-image: url('../images/BANNER_VENTAJAS.jpg');
     background-position: 50%;
     background-size: cover;
   }
+
   
   .slider-4 {
     height: 600px;
@@ -819,13 +820,14 @@
   }
   
   .slide-8 {
-    background-image: url('../images/BANNER_VENTAJAS.jpg');
+    background-image: url('../images/BANNER_EMPRENDE.jpg');
     background-position: 50%;
     background-size: cover;
   }
+
   
   .slide-9 {
-    background-image: url('../images/BANNER_EMPRENDE.jpg');
+    background-image: url('../images/BANNER_MARCALOGO.jpg');
     background-position: 50%;
     background-size: cover;
   }
