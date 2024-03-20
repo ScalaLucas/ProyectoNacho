@@ -44,9 +44,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="w-slider-nav w-round"></div>
         </div>
       </div>
-      <div class="form__contact">
+      <!--<div class="form__contact">
         <h2>Dejanos tu consulta</h2>
-        <form action="https://formsubmit.co/ef49d30f2144ce43c2a18af445c42497" method="post" name="formulario_contacto" netlify>
+        <form action="./php/enviar.php" method="post" name="formulario_contacto">
             <div class="name__email">
                 <input type="text" placeholder="Nombre" name="nombre">
                 <input type="email" placeholder="Correo electrónico" name="correo">
@@ -70,15 +70,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <input type="hidden" name="_captcha" value="false">
 
         </form>
-    </div>
+    </div>-->
+
+
 
     
-      <!--<div class="form__contact">
+      <div class="form__contact">
           <h2>Dejanos tu consulta</h2>
-          <form action="https://formsubmit.co/ignaciovrech@gmail.com" method="POST">
+          <form action="https://formsubmit.co/ignaciovrech@gmail.com" method="POST" name="formulario_contacto">
               <div class="name__email">
-                  <input type="text" placeholder="Nombre" name="Nombre del Cliente">
-                  <input type="email" placeholder="Correo electrónico" name="Correo Electrónico">
+                  <input type="text" placeholder="Nombre" id="name" name="Nombre del Cliente">
+                  <input type="email" placeholder="Correo electrónico" id="email" name="Correo Electrónico">
               </div>
               <div class="subject__telephone">
                   <select id="inputState" class="form-select">
@@ -88,12 +90,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <option>Quiero iniciarme como revendedor</option>
                     <option>Quiero comprar para mi</option>
                   </select>
-                  <input type="text" placeholder="Teléfono" name="Teléfono">
+                  <input type="text" placeholder="Teléfono" id="phone" name="Teléfono">
               </div>
 
-              <textarea name="mensaje" placeholder="Mensaje" name="Mensaje"></textarea>
+              <textarea name="mensaje" placeholder="Mensaje" id="mensaje" name="Mensaje"></textarea>
               <div class="container_btn__text">
-              <input type="submit" class="btn__text" value="Enviar Mensaje">
+              <input id="enviarCorreo" type="submit" class="btn__text" value="Enviar Mensaje">
               </div>
               <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
               <input type="hidden" name="_captcha" value="false">
@@ -101,7 +103,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </form>
       </div>
 
-      <div class="modal__message-send" id="mensaje">
+<script>
+  const btnEnvio = document.getElementById('enviarCorreo');
+
+  btnEnvio.addEventListener('click', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const inputState = document.getElementById('inputState').value;
+    const mensaje = document.getElementById('mensaje').value;
+    window.location.href=`mailto:euroconfortmayoristas@gmail.com?subject=Consulta%20Euro%20Confort&body=Nombre%3A${name}%0AEmail%3A${email}%0ATelefono%3A${phone}%0A%C2%BFCu%C3%A1l%20es%20tu%20negocio%3F%3A${inputState}%0AMensaje%3A${mensaje}`;
+  });
+
+</script>
+
+      <!--<div class="modal__message-send" id="mensaje">
           <div class="message">
               <h1>Su mensaje ha sido enviado correctamente</h1>
               <p>Nos estaremos poniendo en contacto con usted lo antes posible. Muchas gracias por su solicitud.</p>
